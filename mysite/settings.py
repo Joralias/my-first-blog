@@ -25,7 +25,7 @@ SECRET_KEY = '%um01#k4j#ev=9=hepdw1v&o@q6glphzp6z!oo#u_3@em!n%=m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['joralias.pythonanywhere.com']
+ALLOWED_HOSTS = ['joralias.pythonanywhere.com', 'localhost']
 
 
 # Application definition
