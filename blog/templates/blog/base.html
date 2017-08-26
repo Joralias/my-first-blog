@@ -1,5 +1,9 @@
+<!DOCTYPE html>
+
 {% load staticfiles %}
-<html>
+<html lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
         <head>
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -14,7 +18,9 @@
                     <a title="Add new post" href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
                     <a title="Draft list"  href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-list-alt"></span></a>
                 {% else %}
-                    <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+                    <a title="Sign-in" href="{% url 'signup' %}" class="top-menu"><span class="glyphicon glyphicon-user"></span></a>
+                    <a title="Log-in" href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+
                 {% endif %}
 
                 <h1><a href="{% url 'post_list' %}">Django First practice</a></h1>
