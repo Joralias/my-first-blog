@@ -10,17 +10,14 @@
 
             {% endif %}
 
-            <h1>{{ post.title }}</h1>
-            {% if user.is_authenticated %}
+            <h1>{{ post.title }} </h1>
+            {% if user.is_staff or post.author.username == user.username %}
                 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
                 <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
                 {% if not post.published_date %}
                     <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
                 {% endif %}
 
-
-            {% else %}
-                <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
             {% endif %}
             <div class="author">
                 {{ post.author }}
