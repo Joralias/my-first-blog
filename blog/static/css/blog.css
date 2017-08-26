@@ -27,10 +27,13 @@
     }
 
     .date {
-        margin-bottom: 1%;
+        float: right;
         color: #828282;
     }
-
+    .author {
+        margin: 1%;
+        color: #828282;
+    }
     .save {
         float: right;
     }
