@@ -18,8 +18,7 @@
                     <a title="Add new post" href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
                     <a title="Draft list"  href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-list-alt"></span></a>
                 {% else %}
-                    <a title="Sign-in" href="{% url 'signup' %}" class="top-menu"><span class="glyphicon glyphicon-user"></span></a>
-                    <a title="Log-in" href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+                    <a title="Log-in" href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-user"></span></a>
 
                 {% endif %}
 

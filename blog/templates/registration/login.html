@@ -21,4 +21,10 @@
         <input type="submit" value="login" />
         <input type="hidden" name="next" value="{{ next }}" />
     </form>
+    <div>
+        <p>If you don't have an account yet:</p>
+        <a title ="Sign-up" class="btn btn-default" href="{% url 'signup' %}">Sign-Up</a>
+    </div>
+
+
 {% endblock %}
