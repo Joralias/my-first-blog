@@ -3,7 +3,6 @@ from django.utils import timezone
 
 
 class Post(models.Model):
-    STATUS_CHOICES = (('draft', 'Draft'), ('published', 'Published'))
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
     text = models.TextField()
